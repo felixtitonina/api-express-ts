@@ -1,0 +1,18 @@
+npm i express
+
+npm i typescript ts-node-dev -D
+
+npm i @types/express -D
+
+npx tsc --init
+
+
+npm install typeorm --save
+npm install reflect-metadata --save
+npm install pg --save
+
+
+CREATE EXTENSION IF NOT EXISTS "uuid-ossp"
+yarn  typeorm migration:create -n CreateUsers
+
+yarn typeorm migration:run
